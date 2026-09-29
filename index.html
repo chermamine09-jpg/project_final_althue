@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Amine Style est une application web e-commerce moderne et interactive, spécialisée dans la vente de vêtements et d'accessoires de mode. Conçu avec une approche minimaliste et épurée, le site offre une expérience utilisateur fluide et intuitive, optimisée pour le shopping en ligne."
+    />
+    <meta
+      name="keywords"
+      content="e-commerce, boutique en ligne, vêtements, accessoires, mode, shopping, responsive design, minimaliste, interactif"
+    />
+    <meta name="author" content="Amine Style" />
+    <meta property="og:title" content="Amine Style - Boutique en Ligne" />
+    <meta
+      property="og:description"
+      content="Vêtements et accessoires modernes"
+    />
+    <meta property="og:image" content="./image_logo2.webp" />
+    <title>Amine Style- Boutique en Ligne</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="icon" href="./image_logo2.webp" type="image/webp" />
+  </head>
+  <body>
+    <nav>
+        <span class="logo">Amine_<span style="color: var(--primary-orange);">Style</span></span>
+        <ul>
+          <li style="color: var(--primary-orange);">Home</li>
+          <li>Products</li>
+          <li>New Arrivals</li>
+          <li>Contact</li>
+        </ul>
+        <div>
+            <img src="./chercher.png" alt="search" height="25" width="25" />
+            <img src="./panier.png" alt="cart" height="25" width="25" />
+            <img src="./utilisateur.png" alt="profile" height="25" width="25" />
+        </div>
+    </nav>
+    <main>
+        <div class="main-content">
+       <div class="container-one">
+        <div>
+            <img src="./img11.jpg" alt="Product Image 1" height="600" width="600" />
+        </div>
+        <div class="product-info">
+            <h5 style="color: var(--primary-orange);">NEW PRODUCT</h5>
+            <h1>Motif Detail Sweater</h1>
+            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px; font-weight:500; font-size: 14px;">
+                <div class="rating-container">
+                 <div class="stars" style="color: var(--star-gold);">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                 </div>  
+                </div>
+                <div>
+                    <span class="score">4.9</span>
+                </div>
+               <span>|</span> 
+               <span>12K Purchased</span>
+               <span>|</span>
+               <span>200 Stocks</span>
+            </div>
+            <section>
+                <h2>Description</h2>
+                <p s style="font-size: 16px; line-height: 1.6; color:grey">Oversized zip-through hoodie in sweatshirt fabric made from a cotton blend with a soft brushed inside and a print motif on the front. Double-layered, drawstring hood, a zip down the front, dropped shoulders and long sleeves. Kangaroo pockets and ribbing at the cuffs and hem.</p>
+            </section>
+            <section>
+                <h2>Product Detail</h2>
+                <ul style="color:grey">
+                    <li>Oversize Fit</li>
+                    <li>Hooded Jacket</li>
+                    <li>Shell Cotton 50%, Polyester 50%</li>
+                    <li>Light grey marl/Harvard</li>
+                    <li>1127636002</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Where To Shop</h2>
+                <p style="font-size: 16px; line-height: 1.6; color:grey">Find the nearest Zentrix Store and Zentrix Boutiques boutiques through our store locator, or discover our Online Boutique, available in multiple countries/regions.</p>
+            </section>
+            <section>
+                <h2>Composition And Care</h2>
+                <p style="font-size: 16px; line-height: 1.6; color:grey">We work with monitoring programmers to ensure compliance with our social, environmental and health safety standard for our garments. To assess compliance, we have developed a programmers of audits and continuous improvement plans</p>
+            </section>
+        </div>
+      </div>
+      <div class="container-two"> 
+        <div class="product-images">
+            <div>
+                <img src="./img12.jpg" alt="Product Image 2" height="500px" width="100%" style="border-image-slice: fill;"/>
+            </div>
+           
+           <div style="display: flex; flex-direction: row; gap: 10px;">
+            <img src="./img13.jpg" alt="Product Image 3" height="50%" width="50%" />
+            <img src="./img14.jpg" alt="Product Image 4" height="50%" width="50%" />
+           </div>
+           
+        </div>
+        <div class="product-options">
+            <div class="product-choices"> 
+                <div class="product-size-section">
+  <div class="size-header">Size</div>
+  <div class="size-options">
+    <button class="size-btn">S</button>
+    <button class="size-btn">M</button>
+    <button class="size-btn">L</button>
+    <button class="size-btn">XL</button>
+  </div>
+</div>
+                <div class="product-color-section">
+  <div class="color-header">Color</div>
+  <div class="color-options">
+    <!-- Le premier bouton a la classe "active" pour montrer la sélection avec un contour -->
+    <button class="color-btn swatch-gray active" title="Gris"></button>
+    <button class="color-btn swatch-beige" title="Beige"></button>
+    <button class="color-btn swatch-dark" title="Sombre"></button>
+    <button class="color-btn swatch-blue" title="Bleu"></button>
+  </div>
+</div>
+            </div>
+            <div class="product-price-quantity">
+                <section>
+                    <h3>$29.99</h3>
+                </section>
+                <div class="quantity-container">
+  <button class="qty-btn minus" type="button">-</button>
+  <span class="qty-value">1</span>
+  <button class="qty-btn plus" type="button">+</button>
+</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-reviews">
+            <div>
+                <h3><span style="font-weight: bold; color: var(--primary-orange);margin-inline-end:2px ;">30</span>Comments</h3>
+                
+            </div>
+            <div>
+                <div style="display: flex; flex-direction: row;justify-content: space-between; align-items: center; gap: 10px; ">
+                <img src="./diego-hernandez-MSepzbKFz10-unsplash.jpg" alt="profile" height="40" width="40" />
+                <p style="font-weight: bold; flex-grow: 1;">John Doe</p>
+                <div class="rating-container" style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+                 <div class="stars" style="color: var(--star-gold);">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+                    <span class="score">4.9</span>
+                </div>
+                </div>
+                <p>Great product! I love the design and the quality is excellent. Highly recommend!</p>
+            </div>
+            <div>
+               <div style="display: flex; flex-direction: row;justify-content: space-between; align-items: center; gap: 10px;">
+                <img src="./jake-nackos-IF9TK5Uy-KI-unsplash.jpg" alt="profile" height="40" width="40" />
+                <p style="font-weight: bold; flex-grow: 1;">jane smith</p>
+                <div class="rating-container" style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+                 <div class="stars" style="color: var(--star-gold);">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+                    <span class="score">4.9</span>
+                </div>
+                </div>
+                <p>This is a great product! I love the design and the quality is excellent. Highly recommend!</p> 
+            </div>
+            <h4 style="cursor: pointer; text-decoration: underline; color: var(--primary-orange);">Show More</h4>
+        </div>
+      </div>
+    </div>
+      <div>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 20px; margin-top: 20px;">
+            <h1>Related Products</h1>
+            <span style="cursor: pointer; text-decoration: underline; color: var(--primary-orange);">Show All</span>
+        </div>
+        <div class="related-products">
+            <div class="product-card">
+                <img src="./bui-hoang-long-6KhywOsUvPc-unsplash.jpg" alt="product" height="100%" width="100%" />
+                <h3>hoodie</h3>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 10px;">
+                    <h2>$24.99</h2>
+                    <div class="color-options">
+    <!-- Le premier bouton a la classe "active" pour montrer la sélection avec un contour -->
+    <button class="color-btn swatch-gray active" title="Gris"></button>
+    <button class="color-btn swatch-beige" title="Beige"></button>
+    <button class="color-btn swatch-dark" title="Sombre"></button>
+    <button class="color-btn swatch-blue" title="Bleu"></button>
+  </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./daniel-jaber-WPREj74Xd9I-unsplash.jpg" alt="product"  height="100%"     width="100%" />
+                <h3>Printed T-Shirt</h3>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 10px;">
+                    <h2>$22.99</h2>
+                    <div class="color-options">
+    <!-- Le premier bouton a la classe "active" pour montrer la sélection avec un contour -->
+    <button class="color-btn swatch-gray active" title="Gris"></button>
+    <button class="color-btn swatch-beige" title="Beige"></button>
+    <button class="color-btn swatch-dark" title="Sombre"></button>
+    <button class="color-btn swatch-blue" title="Bleu"></button>
+  </div>
+                </div>    
+            </div>
+            <div class="product-card">
+                <img src="./michael-kyule-54PBmEy8JmY-unsplash.jpg" alt="product" height="100%" width="100%" />
+                <h3>Graphic Hoodie</h3>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 10px;">
+                    <h2>$27.99</h2>
+                    <div class="color-options">
+    <!-- Le premier bouton a la classe "active" pour montrer la sélection avec un contour -->
+    <button class="color-btn swatch-gray active" title="Gris"></button>
+    <button class="color-btn swatch-beige" title="Beige"></button>
+    <button class="color-btn swatch-dark" title="Sombre"></button>
+    <button class="color-btn swatch-blue" title="Bleu"></button>
+  </div>
+                </div>    
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+         <div class="footer-about">
+           <span class="logo">Amine_<span style="color: var(--primary-orange);">Style</span></span>
+           <p>Creating a Unique Style in Your Life through Quality Fashion, Artistic Creation and Infinite Innovation.</p>
+           <div class="footer-social">
+             <img src="./instagram.png" alt="Instagram" height="30" width="30" />
+             <img src="./linkedin.png" alt="LinkedIn" height="30" width="30" />
+             <img src="./twitter.png" alt="Twitter" height="30" width="30" />
+           </div>
+         </div>
+         <div class="footer-links">
+            <div>
+                <h2>Services</h2>
+                <ul>
+                    <li>Investment</li>
+                    <li>Blogs</li>
+                    <li>Assets Market</li>
+                    <li>Trading</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Information</h2>
+                <ul>
+                    <li>Sign Up</li>
+                    <li>Join Community</li>
+                    <li>Learning</li>
+                    <li>Newsletter</li>
+                </ul>
+            </div> 
+            <div>
+                <h2>Platform</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                    <li>Products</li>
+                    <li>Collection</li>
+                </ul>
+            </div>
+
+         </div>
+      </div>
+      </div>
+      <div class="footer-bottom">
+        <p>All rights reserved.© 2026 Amine Style.</p>
+        <p>Terms and Conditions.Privacy Policy</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CA+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* --- Couleurs de fond et structure --- */
+  --bg-main: #fff8e7;         /* Fond général de la page (beige clair) */
+  --bg-card: #FFFFFF;         /* Fond des cartes et blocs blancs */
+  --bg-footer: #181717f4;       /* Fond sombre du pied de page */
+
+  /* --- Couleurs de texte --- */
+  --text-main: #1C222B;       /* Titres et texte principal (noir / bleu très foncé) */
+  --text-muted: #6B7280;      /* Descriptions et texte secondaire (gris) */
+  --text-footer: #9CA3AF;     /* Texte du pied de page */
+
+  /* --- Couleurs d'accentuation et interactives --- */
+  --primary-orange: #FF6A3D;  /* Bouton "Add to cart", badges "NEW", etc. */
+  --star-gold: #FFC107;       /* Couleur jaune des étoiles de notation */
+  --border-color: #E5E7EB;    /* Couleur des bordures et séparateurs */
+
+  /* --- Sélecteur de couleurs du produit (Section Color) --- */
+  --swatch-gray: #D1D5DB;     /* Première option (gris clair) */
+  --swatch-beige: #E6C594;    /* Deuxième option (beige sablé) */
+  --swatch-dark: #2A3439;     /* Troisième option (gris anthracite) */
+  --swatch-blue: #7093B8;     /* Quatrième option (bleu acier) */
+}
+
+body {
+ font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  margin: 0;
+}
+
+main {
+  padding: 40px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.related-products {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+    gap: 20px;
+}
+
+footer {
+ padding: 40px;
+  margin-top: 40px;  
+  background-color: var(--bg-footer);
+  color: white;
+}
+
+.logo {
+  font-family: 'Playwrite CA Guides', cursive;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 400px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+nav {
+   
+  position: sticky;
+  top: 0;
+  z-index: 100;
+ background-color: var(--bg-main);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 20px 40px;
+    
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.container-one {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+    gap: 20px;
+  
+}
+.container-two {
+   display: flex;
+   flex-direction: column; 
+  max-width: 1200px;
+  width:50%;
+  margin: 0 auto;
+  
+  gap: 20px;
+}
+
+.product-info {
+ background-color: var(--bg-card);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-options {
+ background-color: var(--bg-card);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-reviews {
+ background-color: var(--bg-card);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.product-price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.add-to-cart{
+    background-color: var(--primary-orange);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.product-color-section {
+  margin: 20px 0;
+}
+
+.color-header {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1C222B;
+  margin-bottom: 10px;
+}
+
+.color-options {
+  display: flex;
+  gap: 12px; /* Espace entre chaque cercle de couleur */
+  align-items: center;
+}
+
+.color-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; /* Rend les boutons parfaitement ronds */
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Association des couleurs aux classes */
+.swatch-gray { background-color: #D1D5DB; }
+.swatch-beige { background-color: #E6C594; }
+.swatch-dark { background-color: #2A3439; }
+.swatch-blue { background-color: #7093B8; }
+
+/* Effet au survol */
+.color-btn:hover {
+  transform: scale(1.1); /* Petit zoom élégant */
+}
+
+/* Style du bouton sélectionné (actif) avec un double contour, comme sur le modèle */
+.color-btn.active {
+  border-color: #FFFFFF;
+  box-shadow: 0 0 0 2px #1C222B; /* Crée l'effet d'anneau extérieur noir */
+}
+
+.product-size-section {
+  margin: 20px 0;
+}
+
+.size-header {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1C222B;
+  margin-bottom: 10px;
+
+}
+
+.size-options {
+  display: flex;
+  gap: 10px; /* Espace entre les boutons */
+}
+
+.size-btn {
+  width: 42px;
+  height: 42px;
+  background-color: #FFFFFF; /* Fond blanc par défaut */
+  border: 1px solid #E5E7EB; /* Bordure grise subtile */
+  border-radius: 8px;        /* Coins légèrement arrondis comme sur le design */
+  color: #1C222B;            /* Texte sombre */
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+/* Style spécifique pour la taille active (ex: M)[cite: 8] */
+.size-btn.active {
+  background-color: #FF6A3D; /* Couleur orange de la marque Zentrix[cite: 8] */
+  color: #FFFFFF;            /* Texte en blanc */
+  border-color: #FF6A3D;
+}
+
+/* Effet au survol de la souris */
+.size-btn:hover {
+  border-color: #FF6A3D;
+}
+
+.quantity-container {
+  display: inline-flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB; /* Bordure grise subtile du design */
+  border-radius: 30px;        /* Forme arrondie en capsule */
+  padding: 4px 6px;
+  gap: 15px;
+}
+
+.qty-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1C222B;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+/* Effet au survol sur les boutons - et + */
+.qty-btn:hover {
+  background-color: #F3F4F6;
+}
+
+.qty-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1C222B;
+  min-width: 15px;
+  text-align: center;
+}
+
+.related-products  {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+margin:0;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 15px); /* Ajustement pour l'espacement entre les cartes */
+}
